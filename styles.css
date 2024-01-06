@@ -1,0 +1,148 @@
+/*
+Font Families is 'Bebas Neue', 'Arsenal', 'Dancing Script' and 'Libre Baskerville'
+*/
+p {
+    font-family: 'Libre Baskerville';
+    letter-spacing: 2px;
+    font-size: 23px;
+}
+nav {
+    background-color: rgb(51, 160, 190);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav span {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 15px;
+    list-style: none;
+    font-size: 1.2rem;
+    
+}
+
+li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px;
+}
+li a:hover {
+    color: #ffffff;
+    border-bottom: 8px solid #ffffff;
+    border-radius: 16px;
+    transition: border-bottom .2s ease-in-out;
+}
+.intro {
+    font-family: 'Arsenal', 'sans-serif';
+    position: absolute;
+    font-weight: 300;
+    opacity: 0.7;
+    text-align: center;
+    border: gray 2px solid;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+div {
+    border: 3px solid gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.colors {
+    margin-top: 135px;
+    margin-left: 3em;
+    position: static;
+}
+.colors h3 {
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+}
+.colors p {
+    display:inline-block;
+    font-size: 1.4rem;
+}
+
+.button1 {
+    background-color: #161cca;
+    border: none;
+    color: white;
+    padding: 30px 75px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.button2 {
+    background-color: #f50d0d;
+    border: none;
+    color: white;
+    padding: 30px 75px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 16px;
+}
+.button3 {
+    background-color: rgba(222, 150, 240, 0.667);
+    border: none;
+    color: white;
+    padding: 30px 75px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 16px;
+}
+.button4 {
+    background-color: aqua;
+    border: none;
+    color: white;
+    padding: 30px 75px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 16px;
+}
+.button5 {
+    margin-top: 30px;
+    margin-right: 25px;
+    background-color: darkorange;
+    border: none;
+    color: white;
+    padding: 30px 75px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.button6 {
+    margin-top: 30px;
+    margin-right: 25px;
+    background-color: greenyellow;
+    border: none;
+    color: white;
+    padding: 30px 75px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.button7 {
+    margin-top: 30px;
+    background-color: #08140b;
+    border: none;
+    color: white;
+    padding: 30px 75px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
