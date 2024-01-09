@@ -1,232 +1,134 @@
-/*
-Font Families is 'Bebas Neue', 'Arsenal', 'Dancing Script' and 'Libre Baskerville'
-*/
-html {
-    background-color: blanchedalmond;
+* { 
+    box-sizing: border-box; 
 }
-div {
-    border: 3px solid gray;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-}
-p {
-    letter-spacing: 2px;
+
+body {
+    font-family: Helvetica,'sans-serif';
     font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-decoration: none;
 }
-nav {
-    background-color: rgb(51, 160, 190);
-    box-sizing: border-box;
+header {
     display: flex;
-    position: fixed;
-    top: 0;
-    width: 1517px;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 20px 50px;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0px;
+    width: 96%;
+    background-color: black;
 }
 
-nav span {
-    font-size: 2rem;
-    color: #ffffff;
+#nav-title {
+    height: 50px;
+    margin-right: auto;
 }
 
-ul {
-    display: flex;
-}
-
-nav ul li {
-    padding: 15px;
+header li {
     list-style: none;
-    font-size: 1.2rem;
-    
-}
-
-li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 20px;
-}
-li a:hover {
-    color: #fbf7f7;
-    border-bottom: 4px solid #fce2e2;
-    border-radius: 16px;
-    transition: border-bottom .2s ease-in-out;
-}
-#intro {
-    font-family: 'Arsenal', 'sans-serif';
-    display: block;
-    margin-top: 84px;
-    position: static;
-    font-weight: 300;
-    opacity: 0.7;
-    text-align: center;
-    border: gray 2px solid;
-    width: 1514px;
-}
-.colors {
-    display: block;
-    margin-top: 100px;
-    position: static;
-    margin-left: 2.8em;
-}
-h3 {
-    font-size: 50px;
-    font-family: 'Bebas Neue';
-}
-.colors p {
-    display:inline-block;
-    font-size: 1.4rem;
-}
-
-.button1 {
-    background-color: #161cca;
-    border: none;
-    color: white;
-    padding: 30px 75px;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 25px;
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-.button2 {
-    background-color: #f50d0d;
-    border: none;
-    color: white;
-    padding: 30px 75px;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 25px;
-    font-size: 16px;
-}
-.button3 {
-    background-color: rgba(222, 150, 240, 0.667);
-    border: none;
-    color: white;
-    padding: 30px 75px;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 25px;
-    font-size: 16px;
-}
-.button4 {
-    background-color: aqua;
-    border: none;
-    color: white;
-    padding: 30px 75px;
-    text-align: center;
-    text-decoration: none;
-    margin-right: 25px;
-    font-size: 16px;
-}
-.button5 {
-    margin-top: 30px;
-    margin-right: 25px;
-    background-color: darkorange;
-    border: none;
-    color: white;
-    padding: 30px 75px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
-.button6 {
-    margin-top: 30px;
-    margin-right: 25px;
-    background-color: greenyellow;
-    border: none;
-    color: white;
-    padding: 30px 75px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
-.button7 {
-    margin-top: 30px;
-    background-color: #08140b;
-    border: none;
-    color: white;
-    padding: 30px 75px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
-.fonts {
-    margin-left: 3.2em;
-    box-sizing: border-box;
-    font-size: 10px;
     display: inline-block;
-    padding: 5px;
-    width: 97%;
+    padding: 5px 20px;
 }
-.fonts-arsenal {
-    font-family: 'Arsenal';
-}
-.fonts-underline {
-    text-decoration: underline;
-}
-.fonts-bold {
-    font-weight: bold;
-}
-.fonts-italic{
-    font-style: italic;
-}
-.fonts-bebas {
-    display: block;
-    position: relative;
-    text-align: right;
-    font-family: 'Bebas Neue';
-    margin-right: 200px;
 
-}
-.fonts-bebas-special {
-    margin-right: 566px;
-    font-family: 'Bebas Neue';
-    text-align: right;
+header a {
     text-decoration: underline;
+    transition: all 0.3s ease 0s;
+    color: seashell;
+    opacity: 0.9;
+    font-family: Helvetica;
 }
-.fonts-libre {
-    font-family: 'Libre Baskerville';
-}
-.fonts-dancing {
-    font-family: 'Dancing Script';
-        display: block;
-        position: relative;
-        text-align: right;
-        margin-right: 180px;
-}
-.fonts-dancing-special {
-    margin-right: 470px;
-    font-family: 'Dancing Script';
-    text-align: right;
-    text-decoration: underline;
-}
-.headings {
-    margin-left: 3em;
-    box-sizing: border-box;
-    font-size: 10px;
-    display: block;
-    padding: 5px;
-    width: 97%;
 
+header a:hover {
+    color: #b2dfdb;
 }
-h1 {
-    font-weight: 700;
-    font-size: 40px;
-    font-family: 'Libre Baskerville';
+.mission {
+    display: flex;
+    margin-top: 110px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img-mission-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
 }
-h2 {
-    font-weight: 500px;
-    font-size: 28px;
-    font-family: 'Arsenal';
+.mission-text {
+    background-color: black;
+    width: 100%;
 }
-.headul {
-    letter-spacing: 2px;
-    font-size: 22px;
-    display: block;
-}
-footer {
+
+h2, h4, p, h5 {
     text-align: center;
-    font-weight: bold;
+    font-family: Helvetica,'sans-serif';
+    color: seashell;
+    opacity: 0.9;
 }
+.featured {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+  
+  .featured > div {
+    margin: 5px;
+    padding: 10px;
+  }
+  .banner {
+    height: 500px;
+    max-width: 1200;
+    margin: 40px auto auto auto;
+    padding-top: 85px;
+    background-image: url('img-locations-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .box-container {
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto auto auto;
+
+
+  }
+  
+  .box {
+    height: 300px;
+    padding: 20px;
+    margin-bottom: auto;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+  }
+  .text-top {
+    font-size: 43px;
+    font-weight: bold;
+  }
+  .footer {
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+.copyright span {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+
+
+
+
