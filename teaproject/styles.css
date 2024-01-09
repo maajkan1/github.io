@@ -1,0 +1,134 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Helvetica,'sans-serif';
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0px;
+    width: 96%;
+    background-color: black;
+}
+
+#nav-title {
+    height: 50px;
+    margin-right: auto;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+header a {
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
+    color: seashell;
+    opacity: 0.9;
+    font-family: Helvetica;
+}
+
+header a:hover {
+    color: #b2dfdb;
+}
+.mission {
+    display: flex;
+    margin-top: 110px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img-mission-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+.mission-text {
+    background-color: black;
+    width: 100%;
+}
+
+h2, h4, p, h5 {
+    text-align: center;
+    font-family: Helvetica,'sans-serif';
+    color: seashell;
+    opacity: 0.9;
+}
+.featured {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+  
+  .featured > div {
+    margin: 5px;
+    padding: 10px;
+  }
+  .banner {
+    height: 500px;
+    max-width: 1200;
+    margin: 40px auto auto auto;
+    padding-top: 85px;
+    background-image: url('img-locations-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .box-container {
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto auto auto;
+
+
+  }
+  
+  .box {
+    height: 300px;
+    padding: 20px;
+    margin-bottom: auto;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+  }
+  .text-top {
+    font-size: 43px;
+    font-weight: bold;
+  }
+  .footer {
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+.copyright span {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+
+
+
+
