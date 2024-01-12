@@ -131,36 +131,30 @@ h2, h4, p, h5 {
 @media screen and (max-width: 600px) {
   li {
     max-width: 100%;
-      height: auto;
     font-size: 16px;
    }
    .box-container {
-    font-size: 15px;
-    max-width: 100%;
-       height: auto;
+    font-size: 17px;
+    width: 100%;
    }
-    .box {
-        max-width: 100%;
-        font-size: 15px;
-        height: auto;
    .mission {
-    margin-top: 50px;
+    margin-top: 70px;
    }
-    header {
-    max-width: 100%;
-    display: block;
-    padding: 15px;
-        text-align: center;
-        align-items: center;
-    }
-        header li {
-            display: inline-block;
-            margin-right: 5px;
-            max-width: 100%;
-        }
-    #nav-title {
-        margin-right: 5px;
-    }
+  header {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    top:
+  }
+  header li {
+    height: 20px;
+    justify-content: space-between;
+    display: flex;
+    background-color: black;
+    
+  
+  }
+   
 }
 
 
