@@ -14,12 +14,12 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 20px;
     height: 69px;
     border-bottom: 1px solid seashell;
     position: fixed;
     top: 0px;
-    width: 96%;
+    min-width: 96%;
     background-color: black;
 }
 
@@ -69,7 +69,7 @@ h2, h4, p, h5 {
 .featured {
     display: flex;
     flex-flow: row wrap;
-    width: 1000px;
+    max-width: 1000px;
     justify-content: center;
     margin: 0 auto;
 
@@ -79,6 +79,7 @@ h2, h4, p, h5 {
     margin: 5px;
     padding: 10px;
   }
+
   .banner {
     height: 500px;
     max-width: 1200;
@@ -90,7 +91,7 @@ h2, h4, p, h5 {
     background-size: cover;
   }
   .box-container {
-    max-width: 1050px;
+    max-width: 1050;
     display: flex;
     justify-content: space-between;
     margin: 15px auto auto auto;
@@ -101,7 +102,7 @@ h2, h4, p, h5 {
   .box {
     height: 300px;
     padding: 20px;
-    margin-bottom: auto;
+    margin-bottom: 40px;
     flex-basis: 30%;
     box-sizing: border-box;
     background-color: black;
@@ -113,7 +114,7 @@ h2, h4, p, h5 {
     font-weight: bold;
   }
   .footer {
-    margin-top: 20px;
+    margin-top: 70px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -127,6 +128,18 @@ h2, h4, p, h5 {
     font-size: 16px;
 }
 
+@media screen and (max-width: 600px) {
+  li {
+    max-width: 100%;
+    font-size: 18px;
+   }
+   .box-container {
+    font-size: 17px;
+   }
+   .mission {
+    margin-top: 50px;
+   }
+}
 
 
 
