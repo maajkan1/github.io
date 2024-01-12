@@ -138,9 +138,10 @@ h2, h4, p, h5 {
     width: 100%;
    }
    .mission {
-    margin-top: 70px;
+    margin-top: 3px;
    }
   header {
+    position: static;
     display: inline-flex;
     align-content: center;
     justify-content: center;
