@@ -145,9 +145,11 @@ h2, h4, p, h5 {
    .mission {
     margin-top: 50px;
    }
-    .header {
+    header {
         top: 10px;
         border-style: none;
+        border: none;
+        border-width: none;
     }
     #nav-title {
         margin-right: 5px;
