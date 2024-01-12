@@ -131,7 +131,7 @@ h2, h4, p, h5 {
 @media screen and (max-width: 600px) {
   li {
     max-width: 100%;
-    font-size: 16px;
+    font-size: 14px;
    }
    .box-container {
     font-size: 17px;
