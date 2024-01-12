@@ -134,7 +134,7 @@ h2, h4, p, h5 {
     font-size: 16px;
    }
    .box-container {
-    font-size: 17px;
+    font-size: 15px;
     width: 100%;
    }
    .mission {
@@ -144,13 +144,14 @@ h2, h4, p, h5 {
     display: inline-flex;
     align-content: center;
     justify-content: center;
-    top:
+    font-size: 17px;
   }
   header li {
     height: 20px;
     justify-content: space-between;
     display: flex;
     background-color: black;
+    font-size: 14px;
     
   
   }
