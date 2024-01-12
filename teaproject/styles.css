@@ -152,7 +152,8 @@ h2, h4, p, h5 {
     display: flex;
     background-color: black;
     font-size: 12px;
-    
+    margin-bottom: 2px;
+    margin-top: 4px;
   
   }
    
