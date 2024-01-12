@@ -147,7 +147,7 @@ h2, h4, p, h5 {
    }
     .header {
         top: 10px;
-        border: none;
+        border-style: none;
     }
     #nav-title {
         margin-right: 5px;
