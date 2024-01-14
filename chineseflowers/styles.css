@@ -40,7 +40,7 @@ header nav ul {
     list-style: none;
 }
 nav li {
-    padding-left: 3.5rem;
+    padding-left: 2.5rem;
 }
 nav a {
     text-decoration:  none;
@@ -65,14 +65,11 @@ nav a:hover {
      display: flex;
      flex-direction: column;
      font-size: 1.5rem;
-     justify-content: space-around;
     
     }
     nav li {
         margin-bottom: .5rem;
-        width: 100%;
-        margin-right: .5rem;
-
+        padding-left: 1rem;
         
     }
 }
