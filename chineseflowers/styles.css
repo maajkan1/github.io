@@ -242,3 +242,20 @@ input[type=text]{
   input[type=button]:hover {
     background-color: #4d85d7;
   }
+  footer {
+    background-color: black;
+    opacity: .7;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer p {
+    color:antiquewhite;
+  }
+  .footer img {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: .5rem .5rem 0 .5rem;
+  }
+
