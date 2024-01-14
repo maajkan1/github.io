@@ -117,7 +117,7 @@ nav a:hover {
         background-image: none;
     }
 }
-h2 {
+h2, h3 {
     width: 100%;
     text-align: center;
     margin: 6rem 0 3rem 0;
@@ -173,4 +173,74 @@ h2 {
     margin: 5px;
     padding: 10px;
   }
+
+/*Uppfödarna */
+
+.uppfo {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 3rem auto;
+}
+
+.uppfo > div {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    opacity: .9;
+    margin-right: 6rem;
+
+}
+.uppfo img {
+        border-radius: 20%;
+      
+}
+@media only screen and (max-width: 450px) {
+    .uppfo {
+        flex-direction: column;
+        width: 100%
+    }
+    .uppfo img {
+        width: 22rem;
+    }
+    .uppfo h3 {
+        line-height: 3rem;
+    }
+}
+.contact-form {
+    background-color: azure;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 81.25rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    background-color: #76e2c9;
+    color: rgb(24, 23, 23);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=button]:hover {
+    background-color: #4d85d7;
+  }
+
 
