@@ -1,9 +1,11 @@
 /*Font Families is Cantora One, Parisienne, Nanum Myeongjo, Dancing Script */
 /*Universal för html osvosv*/
 html {  
+    font-family: 'Cantora One', sans-serif;
     box-sizing: border-box;
     font-size: 16px;
     font-weight: 400;
+    background-color: beige;
 
 }
 h1 h2 h3 h5 {
@@ -65,18 +67,20 @@ nav a:hover {
      display: flex;
      flex-direction: column;
      font-size: 1.5rem;
+     width: 100%;
     
     }
     nav li {
+        width: 100%;
         margin-bottom: .5rem;
-        padding-left: .1rem
+        padding-left: .1rem;
         
     }
 }
 
 /*Banner och container*/
 .container {
-    margin-top: 8rem;
+    margin-top: 7.2rem;
     display: flex;
     width: 100%;
     height: 35rem;
@@ -84,7 +88,7 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.75;
     align-items: center;
     justify-content: center;
 
@@ -100,12 +104,73 @@ nav a:hover {
     font-family: 'Dancing Script', sans-serif;
 }
 @media only screen and (max-width: 460px) {
-    .content, .container, .container span {
+    .content, .container {
      font-size: 1.5rem;
     
+    }
+    .container span {
+        font-size: 5rem;
     }
     .container {
         margin-top: 15rem;
         height: 29rem;
+        background-image: none;
     }
 }
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 6rem 0 3rem 0;
+    font-size: 3rem;
+}
+/*Info om owners*/
+
+.about-kennel {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    justify-items: space-between;
+}
+.pics {
+    margin-left: 5rem;
+}
+.row li {
+    line-height: 3.3rem;
+    
+    
+}
+.about-kennel ul {
+    list-style-type:square;
+}
+@media only screen and (max-width: 450px) {
+    .about-kennel {
+        flex-direction: column wrap;
+    }
+    .about-kennel img {
+        display: none;
+    }
+}
+
+
+
+
+
+
+/*Om hundarna*/
+.featured {
+    background-color: azure;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 81.25rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .featured > div {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+  }
+
