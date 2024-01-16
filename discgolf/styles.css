@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Font Families is: Playfair Display (for menu)
+ Roboto for text and Shadows Into Light Two for pictures*/
+html {
+    font-size: 16px;
+    background-color: rgb(35, 32, 32);
+    font-family: 'Roboto', 'sans-serif';
+}
+header {
+    background-color: white;
+    max-height: 6rem;
+    width: 100%
+
+}
+.header img {
+    margin-left: 27rem;
+    width: 6rem;
+    height: 6rem;
+}
+.header {
+    display: flex;
+}
+.logotext {
+    font-family: 'Playfair Display', sans-serif;
+    margin-left: 1rem;
+    font-size: 3rem;
+    justify-self: center;
+    align-self: center;
+    text-shadow: .1rem .2rem .1rem greenyellow;
+}
+@media only screen and (max-width: 450px) {
+    .header img {
+        margin-left: 6.5rem;
+    }
+    .logotext {
+        display: block;
+        font-size: 1.5rem;
+        max-width: 30%;
+        margin-left: 1rem;
+        flex:auto ;
+    }
+}
+.banner {
+    display: flex;
+    background-image: url(banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text {
+    color:blanchedalmond;
+    font-family: 'Shadows Into Light Two', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.456);
+}
+
+@media only screen and (max-width: 450px) {
+    .banner {
+        width: 100%;
+        height: 25rem;
+    }
+    .banner-text {
+        font-size: .85rem;
+    }
+}
+nav {
+    width: 100%;
+    height: 3rem;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.navbar li {
+    font-family: 'Playfair Display', sans-serif; 
+    margin-top: .7rem;
+    font-size: 2rem;
+}
+nav a {
+    text-decoration: none;
+    color:blanchedalmond;
+}
+nav a:hover {
+    text-decoration: underline;
+    font-size: 2.2rem;
+    color: wheat;
+    transition: all 0.7s;
+}
+@media only screen and (max-width: 450px) {
+    .navbar li {
+        font-size: 1.5rem;
+        
+    }
+}
