@@ -1,0 +1,176 @@
+body { /* Själva "köttet" i koden, det som syns i hemsidan, kan även ta html och göra samma */
+  background-color: rgb(25, 27, 29);
+  font-family: Arial, sans-serif; /* Fonten för hela bodyn, alltså hela sidan om det inte ändras mer specifikt i ett element*/
+}
+
+
+nav { /*Targettar <nav> */
+  background-color: #680a7f; /* Bakgrundsfärg på navigeringsbaren */
+}
+
+nav ul { /*Targettar list elementet , alltså navigering och ul (unordered list)*/
+  display: flex; /* Använder flexbox */
+  flex-wrap: wrap; /* Gör att elementen wrappar och forsätter på nästa rad */
+  list-style-type: none; /* Tar bort siffror eller markering att de är en lista */
+  margin: 0; /*Tar bort standardvärderna för margin och padding */
+  padding: 0;
+}
+
+nav ul li { /* Targettar <nav> <ul> <li> elementen. */
+  flex: 1; /* Gör så att alla länkar i naven växer lika mycket */
+  border-right: solid rgb(236, 235, 241) 3px; /*Avskiljer navigering länkarna för ett tydligare utseende */
+}
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a { /* Targettar texten, alltså <a> elementen */
+  display: block; /*Gör dem till block för enklare kodning och positionering */
+  color: white; /* Ändrar färg på texten*/
+  text-align: center; /*Sätter själva texten centralt i blocket */
+  padding: 16px 18px; /*16 px uppåt och neråt och 18 px vänster och höger */
+  text-decoration: none; /*Tar bort blå länkar och även text-dekorationen */
+}
+
+nav ul li a:hover {
+  background-color: #f173bd; /*Ändrar färg på länkarna när man har pekarn över */
+}
+.banner {
+  display: flex; /*Gör den display flex för det är parenten */
+  justify-content: center; /*Gör så childsen (banner-text) är centrerat*/
+  align-items: center; /*Samma som justify-content*/
+  background-image: url(pexels-johnpet-2115257.jpg); /*Sätter bakgrundsbilden till lite webbutveckling tema*/
+  background-position: center; /*Centrerar bilden i själva bakgrunden*/
+  background-repeat: no-repeat; /*Gör så inte bakgrunden reapetas utan är bara en och samma bild */
+  min-height: 400px; /*Gör så den inte krymper för mycket i höjden */
+  min-width: 400px; /*Gör så den inte krymper för mycket i längden*/
+}
+.banner-text { /*Child till .banner, gör detta för att kunna göra en bakgrund med opacity så det blir snyggt*/
+  text-align: center; /*Centrerar texten*/
+  font-size: 30px; /*Sätter stor och fin storlek*/
+  color: white; /*Vit färg på texten*/
+  width: 100%; /*Sträcker 100% av skärmen för att bakgrundsfärgen ska täcka hela bilden */
+  background-color: rgba(0,0,0,.5); /*Använder rgba för att kunna sätta opacity till .5*/
+}
+.container { /*Parent till alla kurs childs*/
+  margin: 20px; /*20 px marginal mellan alla .kurs kolumner*/
+}
+
+.kurs {
+  background-color: white; /*Bakgrundsfärg vit i alla rutor*/
+  display: flex; /*Display flex så man kan göra flex-basis i rutorna och dela upp de*/
+  flex-wrap: nowrap; /*Ska inte wrappa och overlappa utan ska ha sina uppdela flex-basis*/
+  align-items: flex-start; /*Börja där de ska börja, alltså flex-start och inte center te.x*/
+  margin-bottom: 20px; /*Gör lite mellanrum så det blir mer tillgängligt och lättläst*/
+  border: 1px solid #ccc; /*En border så det blir fina rutor*/
+  padding: 20px; /*Padding så det får sin "space*/
+  border-radius: 8px; /*Rundar hörnerna så det inte blir för "stelt"*/
+}
+
+.kurs .namn {
+  flex-basis: 30%; /*Gör så namn-kolumnen tar 30% av längden*/
+  font-weight: bold; /*Gör så texten blir "viktig" och syns bra*/
+  margin-left: 10px; /*Gör så de inte blir så långt till vänster*/
+  margin-top: 10px; /*Lite marginal från toppen av boxen*/
+}
+
+.kurs .beskrivning {
+  flex-basis: 70%; /* Gör så beskrivning tar 70% av längden */
+}
+
+.kurs h2 {
+  margin-top: 5px; /*Lite finjustering*/
+}
+
+.kurs p {
+  margin-top: 5px;/*Lite finjustering*/
+}
+ img {
+  width: 75%; /*Gör så alla bilder inte tar upp gör mycket längd*/
+  height: 60%; /*Gör så de inte tar för mycket höjd*/
+  margin: 10px; /*Gör så det blir lite marginal till text och bilder mellan varann */
+}
+#popupDialog { /*Popup  fönstret, id selektor*/
+  position: fixed; /*Fixed så den följer med vart du än är på sidan*/
+  top: 50%; /*50% top och left för att centrera*/
+  left: 50%; /*samma som top*/
+  transform: translate(-50%, -50%); /*Lärde mig från SVG*/
+  padding: 20px; /*Padding för texten*/
+  background-color: #fff; /*Bakgrundsfärg på pop-upen*/
+  border-radius: 8px; /*Rundar hörnerna*/
+  z-index: 1000; /*Gör så den prioriteras*/
+  box-shadow: 0 0 20px /*Gör lite opacity och skugga*/
+  rgba(0, 0, 0, 0.3);
+  visibility: hidden; /*Hidden så man kan sätta på den via javascript*/
+}
+button {
+  margin-top: 10px; /*Targetar knappen som man trycker upp pop-up fönstret med*/
+  width: 50%; /*Gjorde 50% så den blir lite större*/
+  padding: 10px 20px; /*Padding för att skapa lite marginaler*/
+  background-color: #4caf50; /*Sätter den snygga gröna färgen*/
+  color: #fff; /*Vit text på knappen*/
+  border: none; /*Ingen ram*/
+  border-radius: 4px; /*Rundar hörnerna lite */
+  cursor: pointer; /*Muspekarna blir pointy när man håller över*/
+  transition: background-color 0.3s /*Gör så bakgrundsfärgen easar in på 0.3 sekunder, in-out*/
+      ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049; /*Ändrar färgen minimalt när man har muspekarn över*/
+}
+.contact-form {
+  background-color: azure; /*Bakgrundsfärg azure på kontaktformen*/
+  display: flex; /*Flex för att kunna positionera bättre*/
+  flex-flow: row wrap; /*Sätter i rad och att de wrappar */
+  max-width: 81.25rem; /*Högsta längd är 81,25 rem;*/
+  justify-content: center; /*Gör så det centreras*/
+  margin: 0 auto; /*Samma här*/
+}
+input[type=text]{ /*Targetar texten, där du skriver text.*/
+  width: 100%; /*Täcka 100% av pop-up*/
+  padding: 10px 10px; /*Padding mellan raderna*/
+  margin: 6px 0; /*Samma med marginal*/
+  display: inline-block; /*Gör inline-block så det är på samma rad*/
+  border: 1px solid #ccc; /*Border på raderna*/
+  border-radius: 2px; /*Rundar hörnerna lite*/
+  box-sizing: border-box; /*Border-box så det ser bra ut i alla webbläsare*/
+}
+
+input[type=button] { /*Targetar button på formuläret*/
+  width: 100%; /*100%*/
+  background-color: #76e2c9; /*Bakgrundsfärgen på knappen*/
+  color: rgb(24, 23, 23); /*Texten på knappen */
+  padding: 14px 20px; /*Padding så den inte sitter i nåt annat */
+  margin: 8px 0; /*Samma som padding*/
+  border: none; /*Tar bort ramen*/
+  border-radius: 4px; /*Rundar hörnerna lite*/
+  cursor: pointer; /*Gör så det är pointy cursor när man trycker */
+}
+
+input[type=button]:hover {
+  background-color: #4d85d7; /*När man hoverar knappen ändras färg*/
+}
+footer { /*Foten*/
+  text-align: center; /*Text-align center för att centrera texten*/
+  width: 100%; /*Gör så det täcker hela skärmen med bakgrunds-färg.*/
+  background-color: wheat; /*Bakgrundsfärg är vete, vit alltså*/
+}
+/*Media responsive för när man är på annan device*/
+@media (max-width: 768px) { /*Max-width : 768px, skulle säga en padda typ*/
+  nav ul {
+    flex-direction: column; /* Gör så de stackas vertikalt när fönstret minskas*/
+  }
+
+  .kurs {
+    flex-direction: column; /* Stackar delmomenten vertikalt för att lättare läsa på mobil */
+  }
+
+  .kurs .namn,
+  .kurs .beskrivning {
+    flex-basis: 100%; /* Gör så båda kolumnerna tar 100% width, alltså att de blir lättare att se på mindre skärmar */
+  }
+  .banner-text {
+    font-size: 25px; /*Sänker texten på bannern för att de ska synas bättre och passa in */
+  }
+}

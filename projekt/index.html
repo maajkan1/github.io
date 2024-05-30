@@ -1,1 +1,153 @@
+<!DOCTYPE html> <!-- Specifikerar vilket typ av dokument det är till webbläsaren-->
+<html lang="sv"> <!-- Sätter språket på svenska i html koden-->
+<head> <!-- Startar head för titel, metadata osv-->
+<meta charset="UTF-8"> <!-- Mest pålitliga och använda charset, används alltid och det är UTF-8-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gör det anpassat för flera olika devices, typ mobil-->
+<title>Webbutveckling 1</title> <!-- Sätter titeln webbutveckling 1 för att det är kursen, titeln ska vara stark och bra
+för den syns nästan överallt -->
+<link rel="stylesheet" href="styles.css"> <!-- Länkar till CSS koden så man kan ha den i ett annat dokument-->
+</head> <!-- Sluttagg på <head> -->
+<body> <!-- Startar bodyn, själva innehållet i sidan -->
+  <nav> <!-- Navigeringstaggen, här ska du ha navigationen osv, te.x länkar.-->
+    <ul> <!-- Unordered list, används för att skapa ett navigationsfält med länkar-->
+      <li><a href="#delmoment-1">Delmoment 1</a></li> <!-- Länkar till id"delmoment1"-->
+      <li><a href="#delmoment-2">Delmoment 2</a></li> <!-- Länkar till id"delmoment2"-->
+      <li><a href="#delmoment-3">Delmoment 3</a></li> <!-- Länkar till id"delmoment3"-->
+      <li><a href="#delmoment-4">Delmoment 4</a></li> <!-- Länkar till id"delmoment4"-->
+      <li><a href="#delmoment-5">Delmoment 5</a></li> <!-- Länkar till id"delmoment5"-->
+    </ul> <!--Sluttagg unordered list-->
+  </nav> <!--Sluttagg navigationen-->
+<!-- Navven är tagen med inspiration från w3schools och gjort mina egna ändringar för stil och utseende.-->
+  <div class="banner"> <!--Skapar ett parent för bakgrunden, även för att implementera flex-->
+    <div class="banner-text"> <!--En div för att kunna lägga till det svarta bakom texten så den syns tydligare-->
+      <h1> Webbutveckling 1</h1> <!--Headline 1-->
+      <p>By Mikael Karlsson</p> <!--Av mig :), By låter lite mer proffsigt haha.-->
+    </div> <!--Sluttagg banner-text-->
+  </div> <!--Sluttagg banner-->
+  <div class="container"> <!--Gör en div class container för att skapa en parent till mina "childs" alltså .kurs-->
+    <div id="delmoment-1" class="kurs"> <!--Div id delmoment-1 för att kunna länka från navigationen
+    class"kurs" för att kunna göra samma design på varje "box"-->
+      <div class="namn"> <!--Gör ett class för att designa Delmoment namnen, te.x kunna ändra färg osv-->
+        <h2>Delmoment 1</h2> <!-- Delmoment 1, alltså headlinen för varje "box"-->
+      </div> <!-- Stänger divven "namn"-->
+      <div class="beskrivning"> <!--Beskriver kursens olika delmoment-->
+        <p>I Delmoment 1 fick vi lära oss grundläggande webbteknik och en lätt introduktion till grundläggande HTML/CSS </p> <!--En paragraf, funkar utmärkt för att beskriva saker med text-->
+        <p>Det jag tyckte var mest intressant var hanteringen av <strong>Git</strong> och <strong>Github.</strong> <!--Strong för att highligta det jag lärde mig. alltså GIt-->
+        Jag tyckte boken gav ett bra första steg och tydlig riktning så jag också kunde starta med Git hantering.
+      Här har jag flera projekt som är gjorda med Git, inkl <a href="https://github.com/maajkan1/webbutveckling-1-flex-studentfiles" target="_blank">Läxhjälpen</a> <!--Länk med target blank så det öppnas i ny flik-->
+        <!--En paragraf för att bryta till en ny linje-->
+        <p> Jag gjorde även en inlämning med placering, färg och olika typsnitt på text. Det var givande och roligt
+          att klara av utan några större problem!
+        </p>
+      </div> <!--Sluttagg för beskrivning-->
+    </div> <!-- Sluttagg för kurs divven-->
+    
+    <div id="delmoment-2" class="kurs"> <!--Div id delmoment-2 för att kunna länka från navigationen
+      class"kurs" för att kunna göra samma design på varje "box"-->
+      <div class="namn"> <!--Gör ett class för att designa Delmoment namnen, te.x kunna ändra färg osv-->
+        <h2>Delmoment 2</h2> <!--Headline 2 Delmoment 2-->
+      </div> <!-- Stänger divven "namn"-->
+      <div class="beskrivning"><!--Beskriver kursens olika delmoment-->
+        <p>Delmoment 2 så började det deep-divea mer in i <em>HTML och CSS.</em> <!--Mer kursivt så det noteras-->
+          Första uppgiften handlade om att göra en text med <strong>abbr, strong och i osv.</strong> <!--Highligta-->
+          Jag har inte jobbat så mycket med olika semantik i text, så det var väldigt intressant.
+        </p> <!--En paragraf, funkar utmärkt för att beskriva saker med text-->
+        <p> Jag hade också roligt med uppgiften som innehöll SVG, det var ett främmande koncept som jag 
+          inte hade testat innan. Jag ser många möjligheter att använda det i framtiden för olika projekt så det ska jag
+          verkligen lära mig mer om. Såhär såg mina projekt ut:
+          <img src="uppgift7a.png" alt="uppgift 7A">
+          <img src="uppgift9a.png" alt="uppgift 9A"> <!--Bilderna länkade til samma mapp så behöver inte göra nåt än namnet
+          lägger till en alt ifall bilderna inte skulle ladda eller funka-->
+        </p>
+        <p>Jag använde samma mall och gjorde båda mina uppgiften som en "hemsida" vilket jag tyckte var en rolig idé.</p>
+              <!--En paragraf för att bryta till en ny linje-->
+     </div> <!-- Sluttagg för kurs divven-->
+    </div>
 
+    <div id="delmoment-3" class="kurs"> <!--Div id delmoment-3 för att kunna länka från navigationen
+      class"kurs" för att kunna göra samma design på varje "box"-->
+        <div class="namn"> <!--Gör ett class för att designa Delmoment namnen, te.x kunna ändra färg osv-->
+          <h2>Delmoment 3</h2> <!-- Delmoment 3, alltså headlinen för varje "box"-->
+        </div> <!-- Stänger divven "namn"-->
+        <div class="beskrivning"> <!--Beskriver kursens olika delmoment-->
+          <p>Delmoment 3 var mitt absoluta favoritprojekt.
+            Jag tyckte det var väldigt roligt att följa instruktionerna och skapa en hemsida med flexbox.
+            Jag hade redan mycket grundkunskap inom just flexbox och CSS men fick även bekanta mig mer med flex-basis
+            som jag använt i dessa kolumner. Skulle säga att <a href="https://github.com/maajkan1/webbutveckling-1-flex-studentfiles"><!--Länk till min github-->Läxhjälpen</a> är ett perfekt projekt att testa på
+            och lära sig mer avancerad webbutveckling.
+          </p> <!--En paragraf, funkar utmärkt för att beskriva saker med text-->
+          <p>I boken så fortsatte det med lite mera avancerade grejer som listor, formulär och mobilwebb.
+            Jag skulle säga att mobil-webb är det som är mest relevant just nu eftersom det känns mer vanligt
+            än en dator, så gäller nästan att bygga en hemsida som en mobilhemsida och justera för just dator.
+          </p>
+          <img src="startsida-laxhjalpen.png" alt="Startsida Läxhjälpen"> <!--Länkar till Läxhjälpen projekt-->
+          <img src="omoss-laxhjalpen.png" alt="Om Oss Läxhjälpen"> <!--Länkar till Läxhjälpen projekt-->
+          <p> Lite bilder på min Läxhjälpen hemsida.</p>
+          <!--En paragraf för att bryta till en ny linje-->
+        </div> <!--Sluttagg för beskrivning-->
+      </div> <!-- Sluttagg för kurs divven-->
+
+      <div id="delmoment-4" class="kurs"> <!--Div id delmoment-1 för att kunna länka från navigationen
+        class"kurs" för att kunna göra samma design på varje "box"-->
+          <div class="namn"> <!--Gör ett class för att designa Delmoment namnen, te.x kunna ändra färg osv-->
+            <h2>Delmoment 4</h2> <!-- Delmoment 4, alltså headlinen för varje "box"-->
+          </div> <!-- Stänger divven "namn"-->
+          <div class="beskrivning"> <!--Beskriver kursens olika delmoment-->
+            <p>I Delmoment 4 var det dags för <strong>prov!</strong>
+            Jag hade inte mycket tid att studera tyvärr men jag gjorde mitt bästa, min grundkunskap
+          jag fått innan denna kurs samband med att jag läst igenom boken gjorde att jag klarade mig! :D</p> <!--En paragraf, funkar utmärkt för att beskriva saker med text-->
+            <p>Delmoment 4 hade vi också en inlämningsuppgift där man skulle använda sig av iframe och länka videos
+              från Youtube och Vimeo. Jag fick en idé om att automatiskt förstora/minska med <em> Javascript </em> och
+              blev nöjd med resultatet. Det var ett väldigt basic script jag hittade på internet och gjorde lite egna 
+              ändringar med te.x variabel namnet <strong> let </strong> och la till lite annan id osv.
+              Här är en liten förhandsvisning på det:
+              <img src="delmoment4.png" alt="Snabb mall med ett enkelt Javascript">
+            </p>
+            <!--En paragraf för att bryta till en ny linje-->
+          </div> <!--Sluttagg för beskrivning-->
+        </div> <!-- Sluttagg för kurs divven-->
+    <div id="delmoment-5" class="kurs"> <!--Div id delmoment-5 för att kunna länka från navigationen
+      class"kurs" för att kunna göra samma design på varje "box"-->
+        <div class="namn"> <!--Gör ett class för att designa Delmoment namnen, te.x kunna ändra färg osv-->
+          <h2>Delmoment 5</h2> <!-- Delmoment 1, alltså headlinen för varje "box"-->
+        </div> <!-- Stänger divven "namn"-->
+        <div class="beskrivning"> <!--Beskriver kursens olika delmoment-->
+          <p>Delmoment 5 är sista delmomentet, via lektionsanvisningen får vi lära oss mer och <strong>säkerhet och tillgänglighet</strong>.</p> <!--En paragraf, funkar utmärkt för att beskriva saker med text-->
+          <p>Detta projektet som du just nu läser är det jag älskar att göra, formgiva hemsidor och skapa en användarvänlig och
+            intressant webpage. Jag ska efter denna kursen hoppa in på <em>Javascript och sen köra all-in på React.</em> Backend är även något
+            som jag vill lära mig lite för att skapa log-in system och skapa APIer osv.
+            Mest intressanta med Delmoment 5 var att lära sig om <strong>GDPR</strong> och hur det påverkar yrket som gränssnittsutvecklare.
+          </p>
+          <!--En paragraf för att bryta till en ny linje-->
+        </div> <!--Sluttagg för beskrivning-->
+      </div> <!-- Sluttagg för kurs divven-->
+  </div> <!--Sluttagg för class container-->
+  <footer> <!--Börjar med själva "foten", där jag ska ha frågeformuläret-->
+    <div id="popupContainer"> <!--Skapar en div, en parent för pop-up formuläret-->
+      <button onclick="openPop()"> <!--Onclick = när man klickar, då ska funktionen openPop aktiveras-->
+          Frågeformulär <!--Frågeforumlär står på knappen nu-->
+      </button> <!--Sluttagg knappen-->
+      <br><!--Gjorde en linebreak för att skapa lite distans till texten-->
+      <h3> Ställ en fråga genom att trycka på den gröna knappen!</h3> <!--Övertydlig!-->
+      <div id="popupDialog"> <!--Här är själva Pop-up fönstret som aktiveras när man trycker på knappen-->
+          <div class="form"> <!--Gör en class för form, för att kunna designa-->
+           <label for="fname">Namn:</label><br> <!--Gör label för namn.-->
+           <input type="text" id="fname" name="fname" value="Ditt namn här"><br> <!--Här är idn och name som man använder
+          för att "fånga" informationen i ett backend/javascript språk. Också PHP såklart.-->
+           <label for="email">Email:</label><br> <!--Label E-mail-->
+           <input type="text" id="email" name="email" value="Din email här"><br> <!--Samma som med namn idn osv-->
+           <label for="fraga">Kommentar/Fråga:</label><br> <!--Label för Kommentar/fråga-->
+           <textarea id="fraga" name="fraga" rows="5" cols="33"></textarea><br> <!--Textarea för att få en stor box,
+          med 5 rader och 33 kolumner-->
+           <input type="button" id="button" name="button" value="Skicka"> <!--En knapp som skickar all information.-->
+          <button onclick="openPop()"> <!--Script för att reversa pop-upen. Gör så den stänger-->
+              Stäng
+          </button> <!--Sluttagg Knapp-->
+      </div> <!--Slut div på div class form-->
+  </div>  <!--Popupdialog sluttagg-->
+  </div> <!--Sluttagg pop-up-->
+
+  <script src="script.js"></script> <!--Länkar in scriptet-->
+</footer> <!--Slut på footern.-->
+</body> <!-- Sluttagg body-->
+</html> <!-- Sluttagg html och dokumentet-->
