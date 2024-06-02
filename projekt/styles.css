@@ -43,7 +43,7 @@ nav ul li a:hover {
   background-position: center; /*Centrerar bilden i själva bakgrunden*/
   background-repeat: no-repeat; /*Gör så inte bakgrunden reapetas utan är bara en och samma bild */
   min-height: 400px; /*Gör så den inte krymper för mycket i höjden */
-  min-width: 400px; /*Gör så den inte krymper för mycket i längden*/
+  word-wrap: break-word; /*Bryter så det inte flowar utanför divven*/
 }
 .banner-text { /*Child till .banner, gör detta för att kunna göra en bakgrund med opacity så det blir snyggt*/
   text-align: center; /*Centrerar texten*/
@@ -52,6 +52,7 @@ nav ul li a:hover {
   width: 100%; /*Sträcker 100% av skärmen för att bakgrundsfärgen ska täcka hela bilden */
   background-color: rgba(0,0,0,.5); /*Använder rgba för att kunna sätta opacity till .5*/
 }
+
 .container { /*Parent till alla kurs childs*/
   margin: 20px; /*20 px marginal mellan alla .kurs kolumner*/
 }
